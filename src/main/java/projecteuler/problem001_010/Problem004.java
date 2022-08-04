@@ -1,7 +1,7 @@
 package projecteuler.problem001_010;
 
 import projecteuler.SolutionTemplate;
-import projecteuler.library.StringUtil;
+import projecteuler.library.Util;
 
 public class Problem004 implements SolutionTemplate {
     public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class Problem004 implements SolutionTemplate {
         for(int a = 100; a <= 999; a++) {
             for(int b = a; b <= 999; b++) {
                 int product = a*b;
-                if(product > max && StringUtil.isPalindromic(String.valueOf(product))) {
+                if(product > max && Util.isPalindromic(String.valueOf(product))) {
                     max = product;
                 }
             }

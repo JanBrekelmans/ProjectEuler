@@ -1,6 +1,6 @@
 package projecteuler.library;
 
-public class StringUtil {
+public class Util {
     public static boolean isPalindromic(String s) {
         if(s.isBlank() || s.length() == 1) return true;
 
@@ -11,5 +11,9 @@ public class StringUtil {
         }
 
         return true;
+    }
+
+    public static boolean isPalindromic(int n) {
+        return isPalindromic(Integer.toString(n));
     }
 }
