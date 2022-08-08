@@ -14,4 +14,10 @@ public class Factorial {
 
         return result;
     }
+
+    public static BigInteger binomial(int n, int m) {
+        if(m < 0 || m > n) return BigInteger.ZERO;
+
+        return factorial(n).divide(factorial(m)).divide(factorial(n-m));
+    }
 }

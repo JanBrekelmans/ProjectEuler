@@ -16,4 +16,6 @@ public class Util {
     public static boolean isPalindromic(int n) {
         return isPalindromic(Integer.toString(n));
     }
+
+    public static record Pair<T,V>(T t, V v) {}
 }

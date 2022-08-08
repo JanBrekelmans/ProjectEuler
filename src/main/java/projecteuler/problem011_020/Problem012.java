@@ -7,6 +7,7 @@ public class Problem012 implements SolutionTemplate {
     public static void main(String[] args) {
         System.out.println(new Problem012().getSolution());
     }
+
     @Override
     public String getSolution() {
         int triangleNumber = 1;
