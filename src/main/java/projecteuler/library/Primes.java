@@ -39,4 +39,18 @@ public class Primes {
 
         return result;
     }
+
+    public static boolean isPrime(int n) {
+        if(n <= 1) return false;
+        if(n%2 == 0 || n% 3 == 0) {
+            return n == 2 || n == 3;
+        }
+
+        for(int i = 6; i <= NumberUtil.integerSquareRoot(n)+1; i++) {
+            if(n % (i-1) == 0) return false;
+            if(n % (i+1) == 0) return false;
+        }
+
+        return true;
+    }
 }
