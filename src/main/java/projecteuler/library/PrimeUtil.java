@@ -3,7 +3,7 @@ package projecteuler.library;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Primes {
+public class PrimeUtil {
     public static int getUpperBoundForNthPrime(int n) {
         if(n <= 6) return 6;
         return (int) (n*(Math.log(n) + Math.log(Math.log(n))));

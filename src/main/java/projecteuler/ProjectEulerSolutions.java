@@ -4,10 +4,7 @@ import org.junit.jupiter.api.Test;
 import projecteuler.problem001_010.*;
 import projecteuler.problem011_020.*;
 import projecteuler.problem021_030.*;
-import projecteuler.problem031_040.Problem031;
-import projecteuler.problem031_040.Problem032;
-import projecteuler.problem031_040.Problem037;
-import projecteuler.problem031_040.Problem039;
+import projecteuler.problem031_040.*;
 import projecteuler.problem051_60.Problem059;
 import projecteuler.problem091_100.Problem092;
 import projecteuler.problem091_100.Problem097;
@@ -61,6 +58,10 @@ public class ProjectEulerSolutions {
     // Problems 031-040
     @Test public void testProblem031() {assertEquals(new Problem031().getSolution(), "73682");}
     @Test public void testProblem032() {assertEquals(new Problem032().getSolution(), "45228");}
+    @Test public void testProblem033() {assertEquals(new Problem033().getSolution(), "100");}
+    @Test public void testProblem034() {assertEquals(new Problem034().getSolution(), "40730");}
+    @Test public void testProblem035() {assertEquals(new Problem035().getSolution(), "55");}
+    @Test public void testProblem036() {assertEquals(new Problem036().getSolution(), "872187");}
     @Test public void testProblem037() {assertEquals(new Problem037().getSolution(), "748317");}
     @Test public void testProblem039() {assertEquals(new Problem039().getSolution(), "840");}
 

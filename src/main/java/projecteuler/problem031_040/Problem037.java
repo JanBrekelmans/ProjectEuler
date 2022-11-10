@@ -1,7 +1,7 @@
 package projecteuler.problem031_040;
 
 import projecteuler.SolutionTemplate;
-import projecteuler.library.Primes;
+import projecteuler.library.PrimeUtil;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -25,7 +25,7 @@ public class Problem037 implements SolutionTemplate {
         int counter = 0;
         while(truncatablePrimes.size() < 11 && counter++ < 1_000_000) {
             int maybePrime = maybeTruncatablePrimes.poll();
-            if(Primes.isPrime(maybePrime)) {
+            if(PrimeUtil.isPrime(maybePrime)) {
                 for(Integer suffix: suffixTerms) {
                     int maybeNewPrime = suffix*getMagnitude(maybePrime)*10 + maybePrime;
                     maybeTruncatablePrimes.add(maybeNewPrime);
@@ -42,7 +42,7 @@ public class Problem037 implements SolutionTemplate {
 
     private boolean isRightTruncatablePrime(int n) {
         while(n > 0) {
-            if(!Primes.isPrime(n)) return false;
+            if(!PrimeUtil.isPrime(n)) return false;
             n /= 10;
         }
         return true;

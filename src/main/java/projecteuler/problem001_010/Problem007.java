@@ -1,9 +1,7 @@
 package projecteuler.problem001_010;
 
 import projecteuler.SolutionTemplate;
-import projecteuler.library.Primes;
-
-import java.util.Arrays;
+import projecteuler.library.PrimeUtil;
 
 public class Problem007 implements SolutionTemplate {
     private final static int INDEX = 10_001;
@@ -13,8 +11,8 @@ public class Problem007 implements SolutionTemplate {
     }
     @Override
     public String getSolution() {
-        int upperBound = Primes.getUpperBoundForNthPrime(INDEX);
+        int upperBound = PrimeUtil.getUpperBoundForNthPrime(INDEX);
 
-        return Integer.toString(Primes.getPrimesUntil(upperBound).get(INDEX-1));
+        return Integer.toString(PrimeUtil.getPrimesUntil(upperBound).get(INDEX-1));
     }
 }

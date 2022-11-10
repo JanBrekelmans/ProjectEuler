@@ -1,11 +1,11 @@
 package projecteuler.problem021_030;
 
 import projecteuler.SolutionTemplate;
-import projecteuler.library.Primes;
+import projecteuler.library.PrimeUtil;
 
 public class Problem027 implements SolutionTemplate {
     private final int UPPER_PRIME_LIMIT = 1000 * 1000 + 1000 * 1000 + 1000;
-    private final boolean[] PRIME_SIEVE = Primes.primeSieve(UPPER_PRIME_LIMIT);
+    private final boolean[] PRIME_SIEVE = PrimeUtil.primeSieve(UPPER_PRIME_LIMIT);
 
     public static void main(String[] args) {
         System.out.println(new Problem027().getSolution());
@@ -14,7 +14,7 @@ public class Problem027 implements SolutionTemplate {
     @Override
     public String getSolution() {
         int largestValue = 1000 * 1000 + 1000 * 1000 + 1000;
-        boolean[] primeSieve = Primes.primeSieve(largestValue);
+        boolean[] primeSieve = PrimeUtil.primeSieve(largestValue);
 
         int maxConsecutivePrimes = 0;
         int product = 0;

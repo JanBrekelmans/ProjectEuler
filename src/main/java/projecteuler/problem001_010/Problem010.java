@@ -1,7 +1,7 @@
 package projecteuler.problem001_010;
 
 import projecteuler.SolutionTemplate;
-import projecteuler.library.Primes;
+import projecteuler.library.PrimeUtil;
 
 import java.util.List;
 
@@ -14,7 +14,7 @@ public class Problem010 implements SolutionTemplate {
 
     @Override
     public String getSolution() {
-        List<Integer> primes = Primes.getPrimesUntil(LIMIT);
+        List<Integer> primes = PrimeUtil.getPrimesUntil(LIMIT);
 
         long sum = primes.stream().map(Integer::longValue).reduce(0L, (a, b) -> a + b);
         return Long.toString(sum);

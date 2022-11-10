@@ -1,7 +1,7 @@
 package projecteuler.problem181_190;
 
 import projecteuler.SolutionTemplate;
-import projecteuler.library.Primes;
+import projecteuler.library.PrimeUtil;
 
 public class Problem187 implements SolutionTemplate {
     private final static int LIMIT = 100_000_000;
@@ -10,7 +10,7 @@ public class Problem187 implements SolutionTemplate {
     }
     @Override
     public String getSolution() {
-        var primes = Primes.getPrimesUntil(LIMIT/2);
+        var primes = PrimeUtil.getPrimesUntil(LIMIT/2);
         int total = 0;
         int lastIndex = 0;
 
