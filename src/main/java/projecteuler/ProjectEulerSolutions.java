@@ -5,6 +5,7 @@ import projecteuler.problem001_010.*;
 import projecteuler.problem011_020.*;
 import projecteuler.problem021_030.*;
 import projecteuler.problem031_040.*;
+import projecteuler.problem041_050.*;
 import projecteuler.problem051_60.Problem059;
 import projecteuler.problem091_100.Problem092;
 import projecteuler.problem091_100.Problem097;
@@ -64,6 +65,15 @@ public class ProjectEulerSolutions {
     @Test public void testProblem036() {assertEquals(new Problem036().getSolution(), "872187");}
     @Test public void testProblem037() {assertEquals(new Problem037().getSolution(), "748317");}
     @Test public void testProblem039() {assertEquals(new Problem039().getSolution(), "840");}
+    @Test public void testProblem040() {assertEquals(new Problem040().getSolution(), "210");}
+
+    // Problems 041-050
+    @Test public void testProblem042() {assertEquals(new Problem042().getSolution(), "162");}
+    @Test public void testProblem044() {assertEquals(new Problem044().getSolution(), "5482660");}
+    @Test public void testProblem045() {assertEquals(new Problem045().getSolution(), "1533776805");}
+    @Test public void testProblem046() {assertEquals(new Problem046().getSolution(), "5777");}
+    @Test public void testProblem047() {assertEquals(new Problem047().getSolution(), "134043");}
+    @Test public void testProblem048() {assertEquals(new Problem048().getSolution(), "9110846700");}
 
     // Problems 051-060
     @Test public void testProblem059() {assertEquals(new Problem059().getSolution(), "129448");}
